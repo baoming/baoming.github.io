@@ -11,7 +11,7 @@ tagline: Simple is a good thing.
 
 <p> <a class="btn" href="/about.html">&gt;关于我</a> </p>
 <p> <a class="btn" href="/projects.html">&gt;我参加过的项目</a> </p>
-<p> <a class="btn" href="http://www.kuaipan.cn/file/id_53225996396011675.htm">&gt;我的完整简历PDF下载</a> </p> 
+<p> <a class="btn" href="http://baoming.b0.upaiyun.com/孙宝明简历.pdf">&gt;我的完整简历PDF下载</a> </p> 
 
 <p>我的涂鸦文章，TODO中..</p>
 
