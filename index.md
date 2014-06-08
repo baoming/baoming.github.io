@@ -1,13 +1,17 @@
 ---
 layout: page
-title: 
-tagline: Simple is a good thing.
+title:  
+tagline: Simple is a good thing. ------做人、做事。
 ---
 {% include JB/setup %}
 
-孙宝明，目前工作于[敦煌网](http://www.dhgate.com), 担任系统架构经理。  
-经常出没于北京地铁, 故作思考状，其实是人实在多，实在什么也干不了。发个呆而矣。  
-热爱简单生活，喜欢折腾，刷过路由器，拆过mac本，修过hifi功放。最近准备弄家庭NAS以及修好被孩子弄坏的收音机天线。
+孙宝明，目前工作于[敦煌网](http://www.dhgate.com), 担任研发中心系统架构经理。已服役满6年+。  
+
+热爱简单生活，喜欢折腾，安装过卫星电视接收器（就是俗称的”锅”，可以收看200多个外国台），刷过路由器，拆过mac本，修过hifi功放。
+
+`Simple is a good thing.` 是我信奉和非常喜欢的一句话，无论是做人、做事还是设计系统。大道至简。
+
+
 
 <p> <a class="btn" href="/about.html">&gt;关于我</a> </p>
 <p> <a class="btn" href="/projects.html">&gt;我参加过的项目</a> </p>
