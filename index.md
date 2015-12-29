@@ -5,7 +5,7 @@ tagline: Simple is a good thing. ------做人、做事。
 ---
 {% include JB/setup %}
 
-孙宝明，目前工作于[敦煌网](http://www.dhgate.com), 担任基础架构部系统总监。已服役满6年+。  
+孙宝明，目前工作于[敦煌网](http://www.dhgate.com), 担任基础架构部技术总监。已服役>=7年。  
 
 热爱简单生活，喜欢折腾，长期关注开源项目和技术趋势。
 
@@ -13,9 +13,10 @@ tagline: Simple is a good thing. ------做人、做事。
 
 
 
-<p> <a class="btn" href="/about.html">&gt;关于我</a> </p>
+<p> <a class="btn" href="/about.html">&gt;了解更多关于我..</a> </p>
 <p> <a class="btn" href="/projects.html">&gt;我参加过的项目</a> </p>
-<p> <a class="btn" href="http://baoming.b0.upaiyun.com/孙宝明简历.pdf">&gt;我的完整简历PDF下载</a> </p> 
+<p> <a class="btn" href="http://baoming.b0.upaiyun.com/孙宝明简历.pdf">&gt;下载-完整简历看看</a> </p> 
+<p> <a class="btn" href="http://baoming.b0.upaiyun.com/dhgate自动化构建和发布实践-final.pdf">&gt;下载-技术会议演讲PPT-《自动化构建和发布实践》</a> </p> 
 
 <p>我的涂鸦文章，TODO中..</p>
 
