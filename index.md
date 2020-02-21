@@ -5,7 +5,7 @@ tagline: Simple is a good thing. ------做人、做事。
 ---
 {% include JB/setup %}
 
-孙宝明，目前工作于[敦煌网](http://www.dhgate.com), 担任基础架构部技术总监。已服役>=7年。  
+孙宝明，目前工作于[华为云](http://www.huaweicloud.com), 担任技术专家。   
 
 热爱简单生活，喜欢折腾，长期关注开源项目和技术趋势。
 

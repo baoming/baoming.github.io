@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>upyun云存储试用笔记</title>
+    
+    <meta name="author" content="Sun Baoming">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Baoming's blog</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/about">About Me</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects">Projects</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>upyun云存储试用笔记 </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>31 March 2014</span>
+    </div>
+    <div class="content">
+      
+<p>#QuickStart</p>
+
+<ul>
+  <li>注册帐户，这个简单，访问<a href="www.upyun.com">www.upyun.com</a>注册即可。</li>
+  <li>创建一个空间，设置一下空间的操作员，也就是可以上传管理文件的用户，这与注册帐户是分开的。空间的说法比老外的bucket好理解多了，虽然我认为本质上是同一个东西。</li>
+  <li>上传文件到空间，可以使用api上传、或者使用ftp上传。我测试的时候是使用github上的<a href="https://github.com/upyun/python-sdk">python sdk</a>测试的，几分钟就完成了第一张图片的上传，api设计得也非常简捷、易用，好理解。</li>
+</ul>
+
+<p>以下代码来源于python sdk工程下的demo，修改一下用户名（即空间管理里的操作员）、密码即。</p>
+
+<p><img src="/assets/post/201403/code-upyun.png" alt="code demo upload" /></p>
+
+<ul>
+  <li>使用地址访问文件。</li>
+</ul>
+
+<p><img src="/assets/post/201403/url.png" alt="visit url" /></p>
+
+<ul>
+  <li>done。</li>
+</ul>
+
+<p>#又拍云存储最吸引人的几个特色</p>
+
+<ul>
+  <li><em>简捷方便的Darsboard</em>, 非常易用、好上手。支持的功能都在右侧直观地显示，操作方便快捷。</li>
+</ul>
+
+<p><img src="/assets/post/201403/dashboard.png" alt="dashboard" /></p>
+
+<ul>
+  <li><em>空间支持FTP</em>。这绝对是杀手级的特性，一般分布式存储都是不支持传统目录结构的文件名的，又拍在技术上做到了支持名字空间，底层又是分布式存储的，这在技术上应该下了很多功夫。我推断他们的ftp服务器都是自己实现的。这个特性为大量的网站历史数据迁移和平滑过渡到使用云存储和又拍的CDN， 没有额外的成本。这点我非常佩服。</li>
+</ul>
+
+<p><img src="/assets/post/201403/ftp.png" alt="Ftp" /></p>
+
+<ul>
+  <li><em>图片空间支持自定义图片格式</em>，最多支持达30种，基本上能满足大部分的网站需求。</li>
+</ul>
+
+<p><img src="/assets/post/201403/thumb.png" alt="multisize image" /></p>
+
+<ul>
+  <li>支持表单方式直接post到存储。这对提升用户体验非常有用。</li>
+  <li>
+    <p>流量统计</p>
+
+    <p>统计报表看上去是看小时统计的，图表很快就显示出来了。报表也做得非常直观，好用。</p>
+  </li>
+</ul>
+
+<p>#一点小问题</p>
+
+<p>在试用过程中，因为之前注册过，帐户忘记密码了，所以想通过邮箱找回密码，结果输入邮箱又说我邮箱没有激活；联系客服说后台可以激活邮箱，可是我又忘记密码了无法登录后台，所以如果你账户没有激活邮箱并且忘记密码的话，你就再也用不了这个帐户了。只能重新注册一个帐户。这点应该是一个小小的不足之处，为了安全或者运营考虑，关停帐号是可以的，但不能让用户无法登录，这等于是把用户续费的路都堵死了。希望可以改进。</p>
+
+<p>#其它</p>
+
+<ul>
+  <li>upyun使用空间+流量的计费模式，空间比较便宜，流量不太清楚，最少100G流量起卖，55元。可以单独购买流量。</li>
+  <li>以笔记类应用为例，个人的话，买个10G空间，100G流量，一年足够了，后台的交易管理里方便地计算出你要花多少钱，89.68元/年。还算是相当地便宜的。</li>
+  <li>技术方面的细节，没有过多的看，比如一份文件会存储到几个机房，会不会负载均衡，没有条件测试。</li>
+  <li>单独dig了一把访问外链的域名，dns只返回了一个IP的A记录，不知道是不是跟我没有购买流量有关。商业应用肯定是希望能有多个节点，容灾也好、失效转移也好。</li>
+  <li>总体来讲，这次体验upyun的服务使我对云存储和应用和国内的云存储发展水平有了一定的了解，又拍网整体上还是对使用者非常友好、功能也非常完善。可以打90分以上了。</li>
+  <li>不能再写了，不然别人以为我是又拍网的马甲了，在此申明，我真不是。信不信就由你了。</li>
+</ul>
+
+
+    </div>
+
+    
+
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2014/06/08/%E5%A6%82%E4%BD%95gdb%E8%B0%83%E8%AF%95nginx" title="如何gdb调试nginx">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2020 Sun Baoming
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          网站备案号:<a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备12032778号-1</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
